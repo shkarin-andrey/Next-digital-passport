@@ -1,0 +1,10 @@
+{
+  "locales": [ "ru","en", "fr"],
+  "sourceLocale": "ru",
+  "catalogs": [{
+     "path": "<rootDir>/src/locales/{locale}/messages",
+     "include": ["<rootDir>/"],
+     "exclude": ["**/node_modules/**"]
+  }],
+  "format": "lingui"
+}
