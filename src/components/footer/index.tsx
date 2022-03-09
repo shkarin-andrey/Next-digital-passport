@@ -20,7 +20,7 @@ const Footer = () => {
     return (
         <>
             <div className="bg w-full -mb-2">
-                <Image src={footerBg} alt='hello'/>
+                <Image src={footerBg} alt='hello' layout='responsive'/>
             </div>
             <Wrapper className="footer flex justify-center">
                 <div className="container">
