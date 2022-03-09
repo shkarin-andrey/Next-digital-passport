@@ -4,21 +4,23 @@ import Image from 'next/image'
 import Logo from '../../assets/header/logo'
 
 import {Wrapper} from './style'
+import footerBg from '/src/assets/footer/footerBg.png'
+
 import GooglePlay from '../../assets/googlePlay'
 import Android from '../../assets/android'
-import footerBg from '../../assets/footer/footerBg.png'
 import AppStore from '../../assets/appStore'
 
+const blogs = [
+    'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+    'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+    'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
+]
+
 const Footer = () => {
-    const blogs = [
-        'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
-        'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
-        'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.'
-    ]
     return (
         <>
             <div className="bg w-full -mb-2">
-                <Image src={footerBg} alt='hello' layout='responsive'/>
+                <Image src={footerBg} alt='hello'/>
             </div>
             <Wrapper className="footer flex justify-center">
                 <div className="container">
