@@ -25,7 +25,7 @@ const obj = [
 
 const EggsCards = () => {
     return (
-        <Wrapper className="eggs_cards flex justify-center pt-28">
+        <Wrapper className="eggs_cards hidden lg:flex justify-center pt-28">
             <div className="container grid grid-cols-4 gap-8">
                 {obj.map((card:any, i:number) => {
                     return (

@@ -1,11 +1,12 @@
 interface iBtn {
     text: string;
     styleStatic?: boolean;
+    type?: any;
 }
 
-const Btn = ({text, styleStatic}:iBtn) => {
+const Btn = ({text, styleStatic, type}:iBtn) => {
     return (
-        <button className={`btn ${!styleStatic ? 'btn-white' : ''}`}>
+        <button type={type || 'button'} className={`btn ${!styleStatic ? 'btn-white' : ''}`}>
             {text}
         </button>
     )

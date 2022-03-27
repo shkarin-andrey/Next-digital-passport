@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    display: flex;
-    justify-content: center;
-
     .eggs_card {
         border-radius: 25%;
         position: relative;

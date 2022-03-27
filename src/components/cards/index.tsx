@@ -5,7 +5,7 @@ const Cards = ({title, description, src}:any) => {
         <div className="cards grid grid-cols-12 gap-7">
                 {title.map((titleCard:any, i:any) => {
                     return (
-                        <div key={i} className="card col-span-4 p-5 flex flex-col items-center">
+                        <div key={i} className="card col-span-12 sm:col-span-8 sm:col-start-3  md:col-start-auto  md:col-span-4 p-5 flex flex-col items-center">
                             <Image src={src[i]} alt={titleCard}/>
                             <h3 className="font-bold text-lg mt-5">{titleCard}</h3>
                             <p className="font-light text-center mt-3">{description[i]}</p>

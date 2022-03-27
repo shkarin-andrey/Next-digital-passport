@@ -18,11 +18,11 @@ const CommonApp = () => {
                 <SectionHeader 
                     title={title}
                     description={description}/>
-                <div className="grid grid-cols-12 gap-8 items-center -mt-20">
-                    <div className="col-span-5">
+                <div className="grid grid-cols-12 items-center lg:-mt-20">
+                    <div className="hidden lg:block col-span-5">
                         <Image src={commonApp} alt={title}/>
                     </div>
-                    <div className="col-span-6 col-end-12 flex flex-col gap-10">
+                    <div className="col-span-12 sm:col-span-8 lg:col-span-6 sm:col-end-11 lg:col-end-12 flex flex-col gap-10">
                         <div className="card flex flex-col items-center gap-5">
                             <p>
                                 Вся мощь криптовалютной биржи Binance в одном удобном приложении. <span className="text-cs-orange font-bold">Загрузите</span> мобильное приложение Binance для криптотрейдинга <span className="text-cs-orange font-bold">уже сегодня</span>.

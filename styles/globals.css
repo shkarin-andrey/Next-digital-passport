@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -19,6 +20,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  padding: 0 10px;
 }
 
 .big__title {

@@ -24,20 +24,20 @@ const Footer = () => {
             </div>
             <Wrapper className="footer flex justify-center">
                 <div className="container">
-                    <div className="grid grid-cols-4 gap-7">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-7">
                         <div>
                             <Link href='/'>
-                                <a className="logo flex items-center gap-x-2">
+                                <a className="logo flex justify-center sm:justify-start items-center gap-x-2">
                                     <Logo/>
                                     <span className='font-bold text-2xl'>MuStreets</span>
                                 </a>
                             </Link>
-                            <p>
+                            <p className='text-center sm:text-left'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus facilisi viverra blandit praesent. Faucibus eu ultrices nec augue semper dolor aliquam.
                             </p>
                         </div>
                         <div>
-                            <p>
+                            <p className='text-center sm:text-left'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus facilisi viverra blandit praesent. Faucibus eu ultrices nec augue semper dolor aliquam.
                             </p>
                         </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                             {blogs.map((title:any, i:number) => (
                                 <Link key={i} href='/'>
                                     <a className="flex gap-x-5 items-center">
-                                        <div className='w-1/4 h-12 bg-cs-orange'></div>
+                                        <div className='min-w-[50px] xl:w-1/4 h-12 bg-cs-orange'></div>
                                         <h3>
                                             {title}
                                         </h3>    
@@ -53,7 +53,7 @@ const Footer = () => {
                                 </Link>
                             ))}
                         </div>
-                        <div className='flex flex-col gap-5 items-end'>
+                        <div className='flex flex-col gap-5 items-center sm:items-end'>
                             <div>
                                 <Btn text='Сотрудничество' styleStatic/>
                             </div>

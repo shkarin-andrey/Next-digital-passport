@@ -7,8 +7,10 @@ import CommonApp from '../src/components/commonApp'
 import Footer from '../src/components/footer'
 import Form from '../src/components/form'
 import EggsCards from '../src/components/eggsCards'
+import { useRef } from 'react'
 
 const Home: NextPage = () => {
+  const about = useRef(null)
   return (
     <>
       <Head>
@@ -19,8 +21,8 @@ const Home: NextPage = () => {
 
       <Header/>
 
-      <Main/>
-      <About/>
+      <Main aboutRef={about}/>
+      <About aboutRef={about}/>
       <CommonApp/>
       <EggsCards/>
       <Form/>
